@@ -58,7 +58,7 @@ class Connection implements ConnectionInterface
     {
         $connection = $this->getConnection();
 
-        return $connection->getQueryBuilder();
+        return $connection->createQueryBuilder();
     }
 
 
