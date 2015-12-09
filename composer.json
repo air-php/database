@@ -1,0 +1,12 @@
+{
+    "name": "air-php/database",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Air\\Database\\": "src"
+        }
+    },
+    "require": {
+        "doctrine/dbal": "~2.5"
+    }
+}
