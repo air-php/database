@@ -77,4 +77,17 @@ class Connection implements ConnectionInterface
 
         return $this->connection;
     }
+
+
+    /**
+     * Sets a timezone.
+     *
+     * @param string $timezone The timezone you wish to set.
+     */
+    public function setTimezone($timezone)
+    {
+        $smt = $this->getConnection()->prepare('SET time_zone = ?');
+        $smt->bindValue(1, $timezone);
+        $smt->execute();
+    }
 }
