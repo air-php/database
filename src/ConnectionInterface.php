@@ -32,4 +32,12 @@ interface ConnectionInterface
      * @return QueryBuilder
      */
     public function getQueryBuilder();
+
+
+    /**
+     * Sets a timezone.
+     *
+     * @param string $timezone The timezone you wish to set.
+     */
+    public function setTimezone($timezone);
 }
